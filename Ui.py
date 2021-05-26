@@ -170,8 +170,8 @@ class SettingWindowUi:
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Settings"))
         self.sayRight.setText(
-            _translate("Form", "Говорить правильный ответ после каждого вопроса."))
-        self.passAnotherWork.setText(_translate("Form", "Пропущенные слова, повторяются."))
+            _translate("Form", "Говорить правильный ответ\n после каждого вопроса."))
+        self.passAnotherWork.setText(_translate("Form", "Пропущенные слова повторяются."))
         self.deleteAll.setText(_translate("Form", "Удалить все слова."))
         self.save.setText(_translate("Form", "Подтвердить"))
         self.label.setText(_translate("Form", "TextLabel"))
@@ -274,7 +274,7 @@ class FinishWindowUi:
         self.header.setGeometry(QtCore.QRect(70, 20, 521, 31))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
-        font.setPointSize(20)
+        font.setPointSize(18)
         self.header.setFont(font)
         self.header.setAlignment(QtCore.Qt.AlignCenter)
         self.header.setObjectName("header")
@@ -282,7 +282,7 @@ class FinishWindowUi:
         self.result.setGeometry(QtCore.QRect(30, 400, 181, 31))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
-        font.setPointSize(17)
+        font.setPointSize(15)
         self.result.setFont(font)
         self.result.setObjectName("result")
         self.restart = QtWidgets.QPushButton(Form)
